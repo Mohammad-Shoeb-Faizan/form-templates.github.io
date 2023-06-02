@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #ff5e62;
+      background: linear-gradient(to bottom right, #ff9966, #ff5e62);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #fff;
+      color: #ff5e62;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background: #ff5e62;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Subscription Form</h2>
+    <form>
+      <input type="email" placeholder="Your Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</body>
+</html>

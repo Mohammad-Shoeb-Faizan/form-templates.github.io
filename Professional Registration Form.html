@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #4c2e4f, #161616);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation: slide-in 0.5s ease-out;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      color: #4c2e4f;
+      margin-top: 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: transparent;
+      color: #333;
+      transition: border-bottom-color 0.3s ease;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group input[type="password"]:focus,
+    .form-group select:focus {
+      border-bottom-color: #4c2e4f;
+    }
+
+    .form-group input::placeholder {
+      color: #999;
+    }
+
+    .form-group select {
+      appearance: none;
+      padding: 10px;
+      background: url("arrow.png") no-repeat center right;
+      background-size: 20px;
+    }
+
+    .form-group input[type="checkbox"] {
+      margin-top: 5px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #4c2e4f;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background: #593c5b;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country">
+          <option value="">Select your country</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
