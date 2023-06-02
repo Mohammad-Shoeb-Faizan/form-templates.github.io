@@ -1,6 +1,6 @@
 # Forms Collection
 
-This repository contains a collection of example forms for demonstration purposes. The forms are built using HTML, CSS, and JavaScript.
+This repository contains a collection of example forms for demonstration purposes. The forms are built using HTML and CSS.
 
 ## Forms Included
 
